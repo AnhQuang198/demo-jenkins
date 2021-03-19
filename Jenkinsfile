@@ -4,7 +4,7 @@ node {
         switch (env.BRANCH_NAME) {
             case 'develop':
                 stage('clone') {
-                    git 'https://github.com/AnhQuang198/authen-service-v1.git'
+                    git 'https://github.com/AnhQuang198/demo-jenkins.git'
                     mvnHome = tool 'maven-3.6.2'
                 }
                 stage('build-dev') {
